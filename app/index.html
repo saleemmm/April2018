@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="innovify-app">
+<head>
+    <meta charset="UTF-8">
+    <title>Innovify</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+<div ng-controller="mainCtrl">
+
+    <div ng-include="'components/partials/header.html'"></div>
+    <div class="mt-60">
+        <!--<div ng-controller="ctrl_one">
+            <h3>{{'GREETING'|translate}}</h3>
+            <p>{{'DESCRIPTION'|translate}}</p>
+            <label>{{'LBL_SWITCH'|translate}} </label>
+            <button ng-click='changeLanguage()'> {{'CLICK'|translate}}</button>
+        </div>-->
+        <ng-view></ng-view>
+    </div>
+
+    <div ng-include="'components/partials/footer.html'"></div>
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/ngstorage/ngStorage.min.js"></script>
+
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate/2.7.1/angular-translate.min.js"></script>
+<script src="./app.js"></script>
+<script src="./routes/main/mainController.js"></script>
+<script src="./routes/dashboard/dashboardController.js"></script>
+<script src="./routes/register/registerController.js"></script>
+<script src="./routes/login/loginController.js"></script>
+
+<script src="components/services/responseInterceptor.js"></script>
+<script src="translateService/service.js"></script>
+</body>
+</html>

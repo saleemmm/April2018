@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "main": "app.js",
+  "authors": [
+    "saleem"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "1.5",
+    "bootstrap": "3.3.7",
+    "angular-route": "1.5",
+    "ngstorage": "~0.3.11"
+  }
+}
